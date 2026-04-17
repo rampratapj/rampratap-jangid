@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rampratap Jangid — Senior QA Automation Test Engineer with 6+ years of experience in Selenium, Java, TestNG, and CI/CD integrated testing for enterprise applications." />
+  <meta name="keywords" content="QA Engineer, Automation Testing, Selenium, Java, TestNG, Azure DevOps, Bangalore" />
+  <meta name="author" content="Rampratap Jangid" />
+  <meta property="og:title" content="Rampratap Jangid | Senior QA Automation Engineer" />
+  <meta property="og:description" content="Building test automation frameworks that ship quality at speed." />
+  <meta property="og:type" content="website" />
+  <title>Rampratap Jangid | Senior QA Automation Engineer</title>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NOISE OVERLAY ===== -->
+  <div class="noise"></div>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">RP<span class="accent">.</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up"><span class="tag">Available for Opportunities</span></p>
+      <h1 class="hero-name reveal-up">Rampratap<br /><em>Jangid</em></h1>
+      <p class="hero-title reveal-up">Senior QA Automation Engineer</p>
+      <p class="hero-sub reveal-up">
+        Architecting test automation frameworks that ship quality at speed —<br class="br-hide" />
+        6+ years turning test strategies into zero-defect releases.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="#experience" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-down"></i></a>
+        <a href="Rampratap_Jangid_ATS-SeniorQA.pdf" download class="btn btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat"><span class="stat-num">6<span class="accent">+</span></span><span class="stat-label">Years Exp.</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">30<span class="accent">+</span></span><span class="stat-label">Critical Bugs Found</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">25<span class="accent">%</span></span><span class="stat-label">Regression Reduction</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">TestRunner.java</span>
+        </div>
+        <pre class="code-body"><span class="c-purple">@Test</span>
+<span class="c-blue">public void</span> <span class="c-teal">validatePaymentFlow</span>() {
+  driver.<span class="c-teal">get</span>(<span class="c-orange">"https://app.com/pay"</span>);
+  <span class="c-blue">new</span> PaymentPage(driver)
+    .<span class="c-teal">enterAmount</span>(<span class="c-orange">"500"</span>)
+    .<span class="c-teal">selectMethod</span>(CARD)
+    .<span class="c-teal">submit</span>();
+  Assert.<span class="c-teal">assertEquals</span>(
+    page.<span class="c-teal">getStatus</span>(),
+    <span class="c-orange">"SUCCESS"</span>
+  );
+  <span class="c-gray">// ✓ Test Passed in 1.2s</span>
+}</pre>
+      </div>
+      <div class="badge-float badge-1"><i class="fa-solid fa-circle-check"></i> All Tests Passed</div>
+      <div class="badge-float badge-2"><i class="fa-solid fa-bolt"></i> CI/CD Ready</div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label reveal-up"><span>01</span> About</div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <h2 class="section-title">Quality isn't a phase.<br /><em>It's a culture.</em></h2>
+          <p>I'm a Senior QA Automation Engineer based in Bangalore with over 6 years of experience delivering enterprise-grade quality for banking and marketing platforms. I don't just find bugs — I build systems that prevent them.</p>
+          <p>My work lives at the intersection of engineering discipline and product empathy. From architecting POM-based Selenium frameworks to integrating automation suites directly into CI/CD pipelines, I help teams ship with confidence — every sprint, every release.</p>
+          <p>Recognized as <strong>"Best QA Engineer"</strong> at Brandintelle for consistent performance and cross-team quality leadership.</p>
+          <div class="about-chips">
+            <span class="chip"><i class="fa-solid fa-location-dot"></i> Bangalore, India</span>
+            <span class="chip"><i class="fa-solid fa-briefcase"></i> Open to Remote / Hybrid</span>
+            <span class="chip"><i class="fa-solid fa-graduation-cap"></i> BCA — CGPA 8.25</span>
+          </div>
+        </div>
+        <div class="about-awards reveal-right">
+          <div class="award-card">
+            <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div>
+              <h4>Best QA Engineer</h4>
+              <p>Brandintelle — Consistent performance & quality leadership across all product releases.</p>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h4>Banking Domain Expert</h4>
+              <p>Delivered compliance-driven testing for Canara Bank's Loan Application Processing System.</p>
+            </div>
+          </div>
+          <div class="award-card">
+            <div class="award-icon"><i class="fa-solid fa-users"></i></div>
+            <div>
+              <h4>Team Mentor</h4>
+              <p>Mentored junior QA engineers and standardized QA processes across multiple project tracks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal-up"><span>02</span> Skills</div>
+      <h2 class="section-title center reveal-up">Technical Expertise</h2>
+      <p class="section-sub center reveal-up">A precision toolkit built over 6+ years across QA, automation, and DevOps disciplines.</p>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal-up">
+          <div class="skill-group-icon"><i class="fa-solid fa-flask-vial"></i></div>
+          <h3>Automation & Testing</h3>
+          <ul>
+            <li><span class="bar-wrap"><span class="bar" style="--w:95%"></span></span>Selenium WebDriver</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:90%"></span></span>TestNG Framework</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:92%"></span></span>Page Object Model</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:85%"></span></span>Data-Driven Testing</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:88%"></span></span>In-Sprint Automation</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal-up" style="animation-delay:.1s">
+          <div class="skill-group-icon"><i class="fa-solid fa-infinity"></i></div>
+          <h3>DevOps & CI/CD</h3>
+          <ul>
+            <li><span class="bar-wrap"><span class="bar" style="--w:90%"></span></span>Azure DevOps</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:82%"></span></span>Jenkins</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:88%"></span></span>Git / GitHub</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:85%"></span></span>CI/CD Pipelines</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:78%"></span></span>Build Verification</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal-up" style="animation-delay:.2s">
+          <div class="skill-group-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Data & APIs</h3>
+          <ul>
+            <li><span class="bar-wrap"><span class="bar" style="--w:88%"></span></span>SQL Server / SSMS</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:82%"></span></span>PostgreSQL</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:80%"></span></span>API Testing</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:85%"></span></span>Backend Validation</li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal-up" style="animation-delay:.3s">
+          <div class="skill-group-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Programming</h3>
+          <ul>
+            <li><span class="bar-wrap"><span class="bar" style="--w:92%"></span></span>Java / Core Java</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:70%"></span></span>Python (Scripting)</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:85%"></span></span>Maven</li>
+            <li><span class="bar-wrap"><span class="bar" style="--w:75%"></span></span>AWS (EC2, S3)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-label reveal-up"><span>03</span> Experience</div>
+      <h2 class="section-title reveal-up">Where I've Made Impact</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior QA Automation Engineer</h3>
+                <p class="timeline-company"><i class="fa-solid fa-building"></i> Brandintelle (formerly Mediaware Infotech)</p>
+              </div>
+              <span class="timeline-date">Mar 2021 – Present</span>
+            </div>
+            <p class="timeline-project"><i class="fa-solid fa-folder-open"></i> Marketing Operations Platform (Enterprise Web App)</p>
+            <ul class="timeline-bullets">
+              <li>Led end-to-end QA ownership across 8+ product modules, acting as single point of contact for quality deliverables</li>
+              <li>Architected a scalable Selenium–TestNG POM framework that reduced test maintenance overhead by <strong>~20%</strong></li>
+              <li>Integrated automation suites into Azure DevOps CI/CD pipelines, cutting regression effort by <strong>~25%</strong></li>
+              <li>Identified and tracked <strong>30+ critical production-impacting defects</strong>, directly improving release stability</li>
+              <li>Mentored junior engineers and standardized QA processes, elevating team-wide quality ownership</li>
+              <li>Collaborated with BAs, developers, and stakeholders to surface and resolve quality risks early in SDLC</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Selenium</span><span>TestNG</span><span>Azure DevOps</span><span>Java</span><span>JIRA</span><span>Agile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="animation-delay:.15s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Test Engineer</h3>
+                <p class="timeline-company"><i class="fa-solid fa-building"></i> Canbank Computer Services Limited</p>
+              </div>
+              <span class="timeline-date">Jun 2019 – Mar 2021</span>
+            </div>
+            <p class="timeline-project"><i class="fa-solid fa-folder-open"></i> Canara Bank — Loan Application Processing System</p>
+            <ul class="timeline-bullets">
+              <li>Delivered manual and automated testing for a high-stakes banking application with strict compliance requirements</li>
+              <li>Authored comprehensive test plans, test cases, and test scenarios aligned to business and regulatory workflows</li>
+              <li>Built Selenium automation scripts using Java and TestNG to accelerate regression test cycles</li>
+              <li>Performed backend validation via SQL queries, ensuring end-to-end data integrity across loan processing systems</li>
+              <li>Managed defect lifecycle in JIRA, achieving fast resolution turnaround in close collaboration with dev teams</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Selenium</span><span>Java</span><span>SQL Server</span><span>JIRA</span><span>TestNG</span><span>Banking</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal-up"><span>04</span> Projects</div>
+      <h2 class="section-title reveal-up">Frameworks & Initiatives</h2>
+      <p class="section-sub reveal-up">Key engineering efforts derived from real-world project ownership.</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-gears"></i></div>
+            <div class="project-links">
+              <span class="project-tag">Automation Framework</span>
+            </div>
+          </div>
+          <h3>Enterprise POM Automation Framework</h3>
+          <p>Designed and built a reusable Selenium–TestNG Page Object Model framework from scratch for a multi-module marketing platform, enabling scalable and maintainable test automation across sprint cycles.</p>
+          <div class="project-stack">
+            <span>Java</span><span>Selenium</span><span>TestNG</span><span>Maven</span><span>POM</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><i class="fa-solid fa-arrow-trend-down"></i> 25% less regression effort</div>
+            <div class="metric"><i class="fa-solid fa-wrench"></i> 20% lower maintenance cost</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="animation-delay:.1s">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+            <div class="project-links">
+              <span class="project-tag">CI/CD Integration</span>
+            </div>
+          </div>
+          <h3>CI/CD-Integrated QA Pipeline</h3>
+          <p>Integrated the full Selenium test suite into Azure DevOps CI/CD pipelines, enabling automated test execution on every code push and delivering instant quality feedback to development teams during sprints.</p>
+          <div class="project-stack">
+            <span>Azure DevOps</span><span>Jenkins</span><span>Git</span><span>Selenium</span><span>TestNG</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><i class="fa-solid fa-bolt"></i> Real-time sprint feedback</div>
+            <div class="metric"><i class="fa-solid fa-shield-halved"></i> Zero-surprise releases</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="animation-delay:.2s">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-landmark"></i></div>
+            <div class="project-links">
+              <span class="project-tag">Banking Domain</span>
+            </div>
+          </div>
+          <h3>Banking Compliance Test Suite</h3>
+          <p>Built and executed a comprehensive test suite for Canara Bank's Loan Application Processing System, covering functional, integration, and UAT layers with deep SQL backend validation for data integrity assurance.</p>
+          <div class="project-stack">
+            <span>Java</span><span>Selenium</span><span>SQL Server</span><span>JIRA</span><span>TestNG</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><i class="fa-solid fa-check-double"></i> Regulatory compliance</div>
+            <div class="metric"><i class="fa-solid fa-database"></i> End-to-end data integrity</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="animation-delay:.3s">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="project-links">
+              <span class="project-tag">Process Initiative</span>
+            </div>
+          </div>
+          <h3>QA Process Standardization</h3>
+          <p>Led a cross-team QA process standardization initiative — establishing test strategy templates, defect classification guidelines, and knowledge transfer protocols that elevated junior engineer productivity and team consistency.</p>
+          <div class="project-stack">
+            <span>Test Strategy</span><span>JIRA</span><span>Documentation</span><span>Mentoring</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><i class="fa-solid fa-users"></i> Team mentorship</div>
+            <div class="metric"><i class="fa-solid fa-clipboard-check"></i> Standardized process</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOOLS ===== -->
+  <section class="section tools-section" id="tools">
+    <div class="container">
+      <div class="section-label reveal-up"><span>05</span> Tools & Tech</div>
+      <h2 class="section-title center reveal-up">My Tech Stack</h2>
+      <p class="section-sub center reveal-up">Every tool chosen with intention. Every stack battle-tested in production.</p>
+
+      <div class="tools-orbit">
+        <div class="tools-ring">
+
+          <div class="tool-item reveal-up">
+            <div class="tool-icon"><i class="fa-brands fa-java"></i></div>
+            <span>Java</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.05s">
+            <div class="tool-icon"><i class="fa-solid fa-vial"></i></div>
+            <span>Selenium</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.1s">
+            <div class="tool-icon"><i class="fa-solid fa-list-check"></i></div>
+            <span>TestNG</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.15s">
+            <div class="tool-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <span>Git</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.2s">
+            <div class="tool-icon"><i class="fa-brands fa-github"></i></div>
+            <span>GitHub</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.25s">
+            <div class="tool-icon"><i class="fa-solid fa-cloud"></i></div>
+            <span>Azure DevOps</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.3s">
+            <div class="tool-icon"><i class="fa-brands fa-jenkins"></i></div>
+            <span>Jenkins</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.35s">
+            <div class="tool-icon"><i class="fa-solid fa-database"></i></div>
+            <span>SQL Server</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.4s">
+            <div class="tool-icon"><i class="fa-solid fa-elephant"></i></div>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.45s">
+            <div class="tool-icon"><i class="fa-brands fa-jira"></i></div>
+            <span>JIRA</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.5s">
+            <div class="tool-icon"><i class="fa-brands fa-python"></i></div>
+            <span>Python</span>
+          </div>
+          <div class="tool-item reveal-up" style="animation-delay:.55s">
+            <div class="tool-icon"><i class="fa-brands fa-aws"></i></div>
+            <span>AWS</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs-row reveal-up">
+        <h3 class="certs-title">Certifications</h3>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div>
+              <h4>Selenium WebDriver with Java</h4>
+              <p>Udemy — Automation Testing Track</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div>
+              <h4>Java Programming</h4>
+              <p>Udemy — Core Java Fundamentals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal-up"><span>06</span> Contact</div>
+      <div class="contact-wrap">
+        <div class="contact-left reveal-left">
+          <h2 class="section-title">Let's build quality<br /><em>together.</em></h2>
+          <p>I'm open to senior QA/automation engineering roles, remote or hybrid opportunities, and interesting conversations about test strategy. Drop me a message — I respond within 24 hours.</p>
+          <div class="contact-links">
+            <a href="mailto:rp.automationqa@gmail.com" class="contact-link">
+              <span class="contact-link-icon"><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">rp.automationqa@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+918867899946" class="contact-link">
+              <span class="contact-link-icon"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+91 88678 99946</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/rampratap-jangida4875a168" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link-icon"><i class="fa-brands fa-linkedin"></i></span>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">rampratap-jangid</span>
+              </div>
+            </a>
+            <a href="https://github.com/rampratap-jangid" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link-icon"><i class="fa-brands fa-github"></i></span>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">rampratap-jangid</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="submit-btn">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="form-note" id="form-note"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">RP<span class="accent">.</span></p>
+        <p class="footer-text">Rampratap Jangid — Senior QA Automation Engineer</p>
+        <p class="footer-copy">© 2025 · Designed & Built by Rampratap Jangid · Bangalore, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
